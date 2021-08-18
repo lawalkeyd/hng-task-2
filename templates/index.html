@@ -9,10 +9,67 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
-    <div class="position-absolute top-50 start-50">
+    <div class="container">
+      <h1>Kayode Lawal Resume Page</h1>
+      <div>
+          <div class="row">
+            Oluwakayode Lawal 
+            Github: github.com/lawalkeyd 
+            Location: 11, Odeyemi street, Liberty road, Ibadan 
+            Telephone: 08104207332 
+            Email: lawalkeyd@gmail.com
+
+          </div>
+
+
+
+          <div class="row">
+            <h4>Core skills </h4>
+            -2+ years experience as a software engineer and Python Developer. Extensive experience in Python Django & Flask web frameworks.  <br>
+            -Skilled in working with database management tools such as MySQL, PostgreSQL. <br>
+            -Highly organized with exceptional commitment to task completion and quality assurance when working with computer software programs. <br>
+            -Sound knowledge of front end technologies HTML, JavaScript, CSS, and Bootstrap.  <br>
+          </div>
+
+
+
+
+        
+        <div>
+          <h4>Career Summary <br></h4>
+          Freelance Python Developer (May 2021 – present) 	 	 
+          •Writing, testing and running scripts to develop commencement slides for a US-based education technology company called Full Measure Education. 
+          •Worked with a team of developers from all over the world.
+           
+          Software Developer Intern (February 2021 – May 2021) 	 	 
+          •One of the 100 selected Developers for the Uk Tech Hub/Decagon  Developer Internship program  
+          •Internship was with The Stackfill Company, a logistics startup based in Abuja.  
+          •Developed a logistics web application for acquiring items from major Chinese ecommerce stores like Alibaba, Yiwugo, 1699.  
+           
+          Robotics/Programming Teacher (June 2020- present) 
+          •Taught Robotics using Lego EV3 Mindstorms and Programming using Scratch to over 200 students at The Concord School, Ibadan.  
+          •Ignited in children a passion for STEM subjects. 
+           
+          Freelance Wordpress Developer (July 2019 - present) 
+          • Developed and redesigned Websites for several organizations like Renty and The Concord School 
+       
+
+        </div>
+ 
+
+      </div>
+
+
+    </div>
+
+    <div class="position-absolute top-70 start-50">
         <div>
             <h5>Last Input: <br></h5>
-            <h2>{{name}}</h2>
+            <h6>{%for n in name%}
+              {{n}}
+              {% endfor %}
+
+            </h6>
         </div>
         <div>
           <form action="/" method="POST">

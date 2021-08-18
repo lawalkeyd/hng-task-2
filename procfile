@@ -1,1 +1,1 @@
-web: gunicorn --bind :8000 task2.wsgi:app
+web: gunicorn app

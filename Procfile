@@ -1,1 +1,1 @@
-web: gunicorn wsgi task2.app:app
+web: gunicorn wsgi app:app

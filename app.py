@@ -1,4 +1,4 @@
-from flask import Flask, request , render_template
+from flask import Flask, request , render_template, url_for, redirect
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -27,5 +27,5 @@ def index(name=''):
         c = Comment(name=name, comment=comment)
         db.session.add(c)
         db.session.commit()    
-        return render_template('index.html', comments=comments)    
+        return redirect(url_for('index'))   
     return render_template('index.html', comments=comments)    

@@ -64,10 +64,10 @@
 
     <div class="position-absolute top-70 start-50">
         <div>
-            <h5>Last Input: <br></h5>
-            <h6>{%for n in name%}
-              {{n}}
-              {% endfor %}
+            <h5>All Comments: <br></h5>
+            <h6>{% if comments%}{%for n in comments %}
+              <div>{{n.name}} by {{n.comment}} </div> 
+              {% endfor %}{% endif %}
 
             </h6>
         </div>
@@ -75,8 +75,12 @@
           <form action="/" method="POST">
 
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Input something</label>
+              <label for="exampleInputPassword1" class="form-label">Your name</label>
               <input type="search" class="form-control" name="name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Your comment</label>
+              <input type="search" class="form-control" name="comment">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>

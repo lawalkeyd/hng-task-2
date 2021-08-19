@@ -10,21 +10,23 @@
 </head>
 <body>
     <div class="container">
-      <h1>Kayode Lawal Resume Page</h1>
+
+      
       <div>
           <div class="row">
-            Oluwakayode Lawal 
-            Github: github.com/lawalkeyd 
-            Location: 11, Odeyemi street, Liberty road, Ibadan 
-            Telephone: 08104207332 
-            Email: lawalkeyd@gmail.com
+            <h1 class="mb-0">
+              Kayode 
+              <span class="text-primary">Lawal</span><br>
+          </h1> 
+
 
           </div>
+          <br>
 
 
 
           <div class="row">
-            <h4>Core skills </h4>
+            <h4 class="text-secondary">Core skills </h4>
             -2+ years experience as a software engineer and Python Developer. Extensive experience in Python Django & Flask web frameworks.  <br>
             -Skilled in working with database management tools such as MySQL, PostgreSQL. <br>
             -Highly organized with exceptional commitment to task completion and quality assurance when working with computer software programs. <br>
@@ -33,47 +35,47 @@
 
 
 
-
+          <br>
         
         <div>
-          <h4>Career Summary <br></h4>
-          Freelance Python Developer (May 2021 – present) 	 	 
-          •Writing, testing and running scripts to develop commencement slides for a US-based education technology company called Full Measure Education. 
-          •Worked with a team of developers from all over the world.
-           
-          Software Developer Intern (February 2021 – May 2021) 	 	 
-          •One of the 100 selected Developers for the Uk Tech Hub/Decagon  Developer Internship program  
-          •Internship was with The Stackfill Company, a logistics startup based in Abuja.  
-          •Developed a logistics web application for acquiring items from major Chinese ecommerce stores like Alibaba, Yiwugo, 1699.  
-           
-          Robotics/Programming Teacher (June 2020- present) 
-          •Taught Robotics using Lego EV3 Mindstorms and Programming using Scratch to over 200 students at The Concord School, Ibadan.  
-          •Ignited in children a passion for STEM subjects. 
-           
-          Freelance Wordpress Developer (July 2019 - present) 
-          • Developed and redesigned Websites for several organizations like Renty and The Concord School 
-       
+          <h4 class="text-secondary">Career Summary <br></h4>
+          <div class="row">
+            <b class="text-primary">Freelance Python Developer (May 2021 – present) </b>
+            <span>•Writing, testing and running scripts to develop commencement slides for a US-based education technology company called Full Measure Education. 
+              <br> •Worked with a team of developers from all over the world.</span>
 
+          </div>
+          	 	 
+
+          <div class="row">
+            <b class="text-primary">Software Developer Intern (February 2021 – May 2021)</b>
+            <span>
+              •One of the 100 selected Developers for the Uk Tech Hub/Decagon  Developer Internship program  <br>
+              •Internship was with The Stackfill Company, a logistics startup based in Abuja.  <br>
+              •Developed a logistics web application for acquiring items from major Chinese ecommerce stores like Alibaba, Yiwugo, 1699.  
+            </span>
+          </div>
+           	 	 <div class="row">
+                   <b class="text-primary">Robotics/Programming Teacher (June 2020- present) </b>
+                   <span>
+                    •Taught Robotics using Lego EV3 Mindstorms and Programming using Scratch to over 200 students at The Concord School, Ibadan.  <br>
+                    •Ignited in children a passion for STEM subjects. 
+
+                   </span>
+              </div>
+         
         </div>
  
 
       </div>
 
 
-    </div>
+    <br>
+    <div class="col-3">
 
-    <div class="position-absolute top-70 start-50">
-        <div>
-            <h5>All Comments: <br></h5>
-            <h6>{% if comments%}{%for n in comments %}
-              <div>{{n.comment}} by {{n.name}} </div> 
-              {% endfor %}{% endif %}
-
-            </h6>
-        </div>
         <div>
           <form action="/" method="POST">
-
+          <h3>Leave A Comment</h3>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Your name</label>
               <input type="search" class="form-control" name="name">
@@ -85,6 +87,16 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
         </div>
+        <br>
+        <div>
+          <h5 class="text-danger">All Comments: <br></h5>
+          <h6>{% if comments%}{%for n in comments %}
+            <div>{{n.comment}} by {{n.name}} </div> 
+            {% endfor %}{% endif %}
+
+          </h6>
+      </div>
+      </div>
     </div>
 
 </body>

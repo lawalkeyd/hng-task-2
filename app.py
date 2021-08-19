@@ -10,12 +10,13 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 
 db = SQLAlchemy(app)
+db.create_all()
+
 
 from models import Comment
 
 @app.route('/', methods=['POST', 'GET'])
 def index(name=''):
-    db.create_all()
     try:
         comments = Comment.query.all()
     except:
